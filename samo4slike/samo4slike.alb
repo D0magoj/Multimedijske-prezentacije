@@ -1,0 +1,72 @@
+<webalbum version="1.8.2">
+  <title>samo 4 slike</title>
+  <description>
+    <line>Various photographs that I'd like to share on the Web.</line>
+  </description>
+  <settings>
+    <photosize width="640" height="480">medium</photosize>
+    <thumbsize width="100" height="75">medium</thumbsize>
+    <outputdirectory>D:\Multimedijske\samo4slike\</outputdirectory>
+    <navigateinloop>False</navigateinloop>
+  </settings>
+  <layout>
+    <colourscheme>Default</colourscheme>
+    <pagecolor>16777215</pagecolor>
+    <textcolor>0</textcolor>
+    <linkcolor>16711680</linkcolor>
+    <hotlinkcolor>255</hotlinkcolor>
+    <thumbnailrows>5</thumbnailrows>
+    <thumbnailcols>2</thumbnailcols>
+    <navigationbelowphoto>False</navigationbelowphoto>
+  </layout>
+  <photographs>
+    <photo>
+      <title>Sferno zrcalo u autu - Retrovizor</title>
+      <caption>
+        <line>Retrovizor na autu je zapravo sferno zrcalo i omogućava veću širinu vidnog polja. Zato nam predmeti izgledaju manji i dalje nego što stvarno jesu.</line>
+      </caption>
+      <filename>D:\Multimedijske\retrovizor.jpg</filename>
+    </photo>
+    <photo>
+      <title>Originalna fotografija sfernog zrcala u retrovizoru</title>
+      <filename>D:\1000013853.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <title>Protuprovalno zrcalo</title>
+      <caption>
+        <line>Na slici je protuprovalno zrcalo - Koristi se sferno(konveksno) zrcalo kako bi nam vidno polje bilo šire i kako se lakše uoće predmeti u njemu. Također se koristi i na cesti kao zrcalo da vidimo nadolazeće aute.</line>
+      </caption>
+      <filename>D:\Multimedijske\Protuprovalno zrcalo.jpg</filename>
+    </photo>
+    <photo>
+      <title>Originalna fotografija protuprovalnog zrcala</title>
+      <filename>D:\1000013831.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <title>Refleksija bez zrcala</title>
+      <caption>
+        <line>Slika prikazuje kako do refleksije dolazi iako ne gledamo isključivo u zrcalo. Do te pojave dolazi kada je svjetlost oko predmeta kojeg promatramo jače nego svjetlost unutar prostorije, odnosno kada je svjetlo s unutarnje strane slabije od svjetla s vanjske strane.</line>
+      </caption>
+      <filename>D:\Multimedijske\refleksija.jpg</filename>
+    </photo>
+    <photo>
+      <title>Originalna fotografija refleksije bez zrcala</title>
+      <filename>D:\1000013851.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <title>Refleksija u metalnoj kugli</title>
+      <caption>
+        <line>Ova slika prikazuje refleksiju u metalnoj kugli, ona je također primjer sfernog zrcala.</line>
+      </caption>
+      <filename>D:\Multimedijske\kugla.jpg</filename>
+    </photo>
+    <photo>
+      <title>Originalna fotografija kugle</title>
+      <filename>D:\1000013855.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+  </photographs>
+</webalbum>
