@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Domagoj</dc:creator>
+    <dc:title>Kviz sferna zrcala</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Kviz sferna zrcala</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 122438.png&quot; alt=&quot;Snimka zaslona 2026-05-18 122438.png&quot; title=&quot;Snimka zaslona 2026-05-18 122438&quot; width=&quot;400&quot; height=&quot;289&quot;/&amp;#x003E;
+Konkavno zrcalo se tako&amp;#x0111;er zove i:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Divergentno zrcalo</text><feedback>Neto&amp;#x010D;no, divergentno zrcalo je konveksno zrcalo.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Konvergentno zrcalo</text><feedback>To&amp;#x010D;no, konkavno zrcalo fokusira svjetlost u jednoj to&amp;#x010D;ci, pa se tako&amp;#x0111;er naziva i konvergentno zrcalo.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ravno zrcalo</text><feedback>Neto&amp;#x010D;no, kao &amp;#x0161;to samo ime govori ravno zrcalo je ravno.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Konveksno zrcalo</text><feedback>Neto&amp;#x010D;no, konveksno zrcalo je zaobljeno prema van.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ispup&amp;#x010D;eno zrcalo</text><feedback>Neto&amp;#x010D;no, ispup&amp;#x010D;eno zrcalo je zaobljeno prema van.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 122353.png&quot; alt=&quot;Snimka zaslona 2026-05-18 122353.png&quot; title=&quot;Snimka zaslona 2026-05-18 122353&quot; width=&quot;400&quot; height=&quot;316&quot;/&amp;#x003E;
+Kakva slika &amp;#x0107;e nastati u konkavnom zrcalu ako predmet postavimo izme&amp;#x0111;u fokusa i tjemena zrcala?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Realna, obrnuta, umanjena</text><feedback>Neto&amp;#x010D;no, realna slika nastaje samo kada je predmet postavljen iza F</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Realna, obrnuta, uve&amp;#x0107;ana</text><feedback>Neto&amp;#x010D;no, realna slika nastaje samo kada je predmet postavljen iza F</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, obrnuta i uve&amp;#x0107;ana</text><feedback>Neto&amp;#x010D;no, virtualna slika koja nastaje iz konkavnog zrcala je uvijek uspravna.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, uspravna i uve&amp;#x0107;ana</text><feedback>To&amp;#x010D;no, ako postavimo predmet izme&amp;#x0111;u F i T, zrake svjetlosti divergiraju nakon refleksije i njihove &quot;ekstenzije&quot; se sijeku iza zrcala - slika je virtualna, uspravna i uve&amp;#x0107;ana.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ne&amp;#x0107;e nastati slika.</text><feedback>Neto&amp;#x010D;no, slika u zrcalu uvijek nastaje bila ona realna ili virtualna.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 122411.png&quot; alt=&quot;Snimka zaslona 2026-05-18 122411.png&quot; title=&quot;Snimka zaslona 2026-05-18 122411&quot; width=&quot;400&quot; height=&quot;187&quot;/&amp;#x003E;
+Konveksno zrcalo uvijek proizvodi sliku koja je:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Virtualna, uspravna, umanjena</text><feedback>Konveksna zrcala raspr&amp;#x0161;uju svjetlost, te na&amp;#x0161; mozak predo&amp;#x0107;uje sliku koja nastaje iza zrcala - virtualna, umanjena, uspravna.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Realna, obrnuta, umanjena</text><feedback>Neto&amp;#x010D;no, konveksna zrcala nikad ne proizvode realne slike.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Realna, obrnuta, uve&amp;#x0107;ana</text><feedback>Neto&amp;#x010D;no, konveksna zrcala nikad ne proizvode realne slike.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, uspravna, uve&amp;#x0107;ana</text><feedback>Neto&amp;#x010D;no, pove&amp;#x0107;anje se javlja kod konkavnih zrcala.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, obrnuta, umanjena</text><feedback>Neto&amp;#x010D;no, konveksna zrcala nikad ne proizvode obrnutu sliku.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 122212.png&quot; alt=&quot;Snimka zaslona 2026-05-18 122212.png&quot; title=&quot;Snimka zaslona 2026-05-18 122212&quot; width=&quot;400&quot; height=&quot;268&quot;/&amp;#x003E;
+&amp;#x017D;ari&amp;#x0161;na duljina sfernih zrcala je jednaka:
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>f = R</text><feedback>Neto&amp;#x010D;no, ova relacija bi postavila fokus zrcala u C.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>f = 2R</text><feedback>Neto&amp;#x010D;no, ovo je obrnuta relacija:
+R = f / 2.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>f = R / 2</text><feedback>To&amp;#x010D;no, za svako sferno zrcalo &amp;#x017E;ari&amp;#x0161;na duljina je udaljenost od T do C.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>f = r / 2</text><feedback>Neto&amp;#x010D;no, r je udaljenost od T do C, ne 
+radijus zakrivljenosti</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>f = R / 3</text><feedback>Neto&amp;#x010D;no, kriva formula.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 123441.png&quot; alt=&quot;Snimka zaslona 2026-05-18 123441.png&quot; title=&quot;Snimka zaslona 2026-05-18 123441&quot; width=&quot;400&quot; height=&quot;180&quot;/&amp;#x003E;
+&amp;#x003C;img src=&quot;Snimka zaslona 2026-05-18 123458.png&quot; alt=&quot;Snimka zaslona 2026-05-18 123458.png&quot; title=&quot;Snimka zaslona 2026-05-18 123458&quot; width=&quot;400&quot; height=&quot;235&quot;/&amp;#x003E;
+Ako postavimo predmet u centar zakrivljenosti C konkavnog zrcala, slika &amp;#x0107;e biti:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Realna, obrnuta, iste veli&amp;#x010D;ine.</text><feedback>To&amp;#x010D;no, tako&amp;#x0111;er slika &amp;#x0107;e se nalaziti na centru zakrivljenosti.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ne&amp;#x0107;e nastati slika.</text><feedback>Neto&amp;#x010D;no, slika uvijek nastaje u zrcalima.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Realna, obrnuta, uve&amp;#x0107;ana.</text><feedback>Neto&amp;#x010D;no, ovo se zbiva kada je slika izme&amp;#x0111;u F i C.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, uspravna, uve&amp;#x0107;ana.</text><feedback>Neto&amp;#x010D;no, slika je takva kad je predmet postavljen izme&amp;#x0111;u T i C.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Virtualna, obrnuta, umanjena</text><feedback>Neto&amp;#x010D;no, u C slika koja nastaje nije virtualna.</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Kviz s ponu&amp;#x0111;enim odgovorima</exercise-subtitle>
+<instructions>Odaberite to&amp;#x010D;an odgovor za svako pitanje.</instructions>
+<guess-correct>To&amp;#x010D;no!</guess-correct>
+<guess-incorrect>&amp;#x017D;ao mi je! Poku&amp;#x0161;ajte ponovno.</guess-incorrect>
+<partly-incorrect>Va&amp;#x0161; odgovor je djelomi&amp;#x010D;no neto&amp;#x010D;an: </partly-incorrect>
+<enter-a-guess>Molim, poku&amp;#x0161;ajte odgovoriti.</enter-a-guess>
+<next-correct-letter>Sljede&amp;#x0107;e ispravno slovo u odgovoru: </next-correct-letter>
+<correct-answers>To&amp;#x010D;ni odgovori: </correct-answers>
+<show-answer-caption>Poka&amp;#x017E;i odgovor</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>0</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>0</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Va&amp;#x0161; rezultat je: </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>To&amp;#x010D;no rije&amp;#x0161;ena pitanja u prvom poku&amp;#x0161;aju su:  </correct-first-time>
+<completed-so-far>Do ovog trenutka su odgovori to&amp;#x010D;ni</completed-so-far>
+<exercise-completed>U cijelosti ste zavr&amp;#x0161;ili vje&amp;#x017E;bu.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Va&amp;#x0161;e vrijeme je isteklo!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Sadr&amp;#x017E;aj</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ffffff</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#dddddd</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000cc</link-color>
+<vlink-color>#0000ff</vlink-color>
+<nav-bar-color>#999999</nav-bar-color>
+<formmail-url></formmail-url>
+<email></email>
+<name-please>Molimo, unesite svoje ime:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>To&amp;#x010D;no rije&amp;#x0161;ena pitanja u prvom poku&amp;#x0161;aju su:  </correct-first-time>
+<check-caption>Provjeri</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pomo&amp;#x0107;</hint-caption>
+<show-all-questions-caption>Poka&amp;#x017E;i sva pitanja</show-all-questions-caption>
+<show-one-by-one-caption>Poka&amp;#x017E;i pitanja jedno po jedno</show-one-by-one-caption>
+<show-also-correct>0</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>
