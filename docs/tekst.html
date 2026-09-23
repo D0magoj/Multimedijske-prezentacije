@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekst i linkovi - Sferna zrcala</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf5e6;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== VODORAVNI IZBORNIK ===== */
+    .horizontal-nav {
+      background-color: #f4c542;
+      width: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .horizontal-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .horizontal-nav ul li a {
+      display: block;
+      padding: 16px 24px;
+      text-decoration: none;
+      color: #4a3b0a;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .horizontal-nav ul li a:hover,
+    .horizontal-nav ul li a.active {
+      background-color: #e0b32e;
+      color: #fff;
+    }
+
+    /* ===== VERTIKALNI IZBORNIK ===== */
+    .vertical-nav {
+      position: fixed;
+      left: 0;
+      top: 54px;
+      width: 200px;
+      height: calc(100vh - 54px);
+      background-color: #f9e9b8;
+      border-right: 2px solid #e0c56e;
+      padding-top: 20px;
+      overflow-y: auto;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.08);
+      z-index: 90;
+    }
+    .vertical-nav ul { list-style: none; display: flex; flex-direction: column; }
+    .vertical-nav ul li a {
+      display: block;
+      padding: 12px 18px;
+      text-decoration: none;
+      color: #5a4a1a;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #ecd98a;
+      transition: background-color 0.2s ease, padding-left 0.2s ease;
+    }
+    .vertical-nav ul li a:hover,
+    .vertical-nav ul li a.active {
+      background-color: #f0d98c;
+      padding-left: 24px;
+      color: #3a2e08;
+      font-weight: 600;
+    }
+
+    /* ===== GLAVNI SADRŽAJ ===== */
+    .main-content {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .content-box {
+      width: clamp(320px, 40%, 900px);
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .content-box h1 {
+      font-size: 1.6rem;
+      color: #8a6d1a;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #f4c542;
+      padding-bottom: 8px;
+    }
+    .content-box h2 {
+      font-size: 1.25rem;
+      color: #6b5310;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+    .content-box p { margin-bottom: 14px; }
+
+    /* Formula box */
+    .formula-box {
+      background-color: #fff8dc;
+      border-left: 5px solid #f4c542;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 18px 0;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #6b5310;
+    }
+    .formula-box .formula {
+      font-family: 'Cambria Math', 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      display: block;
+      margin: 8px 0;
+    }
+
+    /* Linkovi */
+    .link-list {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .link-list li {
+      background-color: #fffdf5;
+      border-left: 4px solid #f4c542;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+    .link-list li a {
+      color: #8a6d1a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .link-list li a:hover {
+      text-decoration: underline;
+    }
+    .link-list li .link-desc {
+      display: block;
+      color: #666;
+      font-size: 0.88rem;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    /* Literatura */
+    .literature {
+      background-color: #f9e9b8;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-size: 0.95rem;
+    }
+    .literature ul {
+      list-style: disc;
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+    .literature li {
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .vertical-nav { display: none; }
+      .main-content { margin-left: 0; }
+      .content-box { width: 90%; }
+      .horizontal-nav ul li a { padding: 12px 14px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== VODORAVNI IZBORNIK ===== -->
+  <nav class="horizontal-nav">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="motivacija.html">Motivacija</a></li>
+      <li><a href="pokus.html">Pokus</a></li>
+      <li><a href="rasprava.html">Rasprava</a></li>
+      <li><a href="tekst.html" class="active">Tekst i linkovi</a></li>
+      <li><a href="kviz.html">Kviz znanja</a></li>
+      <li><a href="pojmovnik.html">Pojmovnik</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== VERTIKALNI IZBORNIK ===== -->
+  <aside class="vertical-nav">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="motivacija.html">1. Motivacija</a></li>
+      <li><a href="pokus.html">2. Pokus</a></li>
+      <li><a href="rasprava.html">3. Rasprava</a></li>
+      <li><a href="tekst.html" class="active">4. Tekst i linkovi</a></li>
+      <li><a href="kviz.html">5. Kviz znanja</a></li>
+      <li><a href="pojmovnik.html">6. Pojmovnik</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== GLAVNI SADRŽAJ ===== -->
+  <main class="main-content">
+    <div class="content-box">
+
+      <h1>Refleksija svjetlosti i sferna zrcala</h1>
+
+      <p>
+        Svjetlost se širi pravocrtno dok ne naiđe na prepreku. Kada dođe do prepreke, recimo
+        glatke površine, poput zrcala, svjetlost se odbije - dolazi do refleksije(odbijanja)
+        svjetlosti. Pri odbijanju od ravnog zrcala javlja se zakon refkeksije. Kut pod kojim se odbija
+        svijetlost je jednak kutu kojim svjetlost upada na zrcalo. Zahvaljujući ovom zakonu
+        mi možemo vidjeti svoju sliku u zrcalu, te objasniti zašto se slika u žlici razlikuje od one u 
+        običnom zrcalu.
+      </p>
+
+      <p>
+        Ravno zrcalo ima ravnu reflektirajuću površinu i daje
+        virtualnu sliku koja je uspravna i iste veličine kao
+        predmet. Za razliku od ravnog zrcala žlica i retrovizor nisu ravna zrcala, 
+        već je njihova površina zakrivljena. Takva zrcala nazivamo sferna zrcala, a 
+        dijelimo ih na konkavna (udubljena) i konveksna (ispupčena).
+      </p>
+
+      <p>
+        Kod sfernih zrcala položaj i veličina slike ovise o udaljenosti
+        predmeta od zrcala. Odnos između udaljenosti predmeta <em>a</em> od samog zrcala,
+        udaljenosti slike od zrcala <em>b</em> i žarišne daljine <em>f</em> opisuje
+        <strong>jednadžba sfernog zrcala</strong>:
+      </p>
+
+      <div class="formula-box">
+        <span class="formula">1/a + 1/b = 1/f</span>
+      </div>
+
+      <p>
+        Pri tome je žarišna daljina sfernog zrcala jednaka polovici polumjera
+        zakrivljenosti:
+      </p>
+
+      <div class="formula-box">
+        <span class="formula">f = r / 2</span>
+      </div>
+
+      <p>
+        Omjer visine slike <em>y'</em> i visine predmeta <em>y</em> nazivamo
+        povećanje zrcala. Ono ovisi i o udaljenosti predmeta
+        i slike od zrcala:
+      </p>
+
+      <div class="formula-box">
+        <span class="formula">y' / y = − b / a</span>
+      </div>
+
+      <p>
+        Negativan predznak u izrazu znači da je slika obrnuta u odnosu na
+        predmet. Upravo zato kod konkavnog zrcala, kada je predmet dalje od
+        žarišta, vidimo obrnutu sliku — baš kao što smo uočili u pokusu sa
+        žlicom.
+      </p>
+
+      <p>
+        Kod konveksnog zrcala slika je uvijek virtualna,
+        uspravna i umanjena, neovisno o udaljenosti predmeta, kao što smo vidjeli u pokusu. Zbog toga
+        konveksna zrcala čine naše vidno polje širim nego kad gledamo u ravna zrcala, pa se koriste kao
+        retrovizori u automobilima. No upravo to umanjenje uzrokuje da
+        predmeti izgledaju dalje nego što stvarno jesu — vid i mozak nas zavaraju.
+        Zato na retrovizoru
+        stoji upozorenje <em>"Predmeti u zrcalu bliži su nego što izgledaju."</em>
+      </p>
+
+      <p>
+        Sferna zrcala susrećemo svakodnevno: u retrovizorima, zubarskim
+        ogledalima, teleskopima, reflektorima i make-up zrcalima. Razumijevanje
+        njihova rada pomaže nam ne samo u fizici, nego i u sigurnom
+        sudjelovanju u prometu.
+      </p>
+
+      <h2>Za one koji žele znati više</h2>
+
+      <div class="literature">
+        <li><a href = "https://edutorij-admin-api.carnet.hr/storage/extracted/6b9de2eb-c6d7-412b-8afc-c0820325b64d/zrcala.html">Više o zrcalima</a></li>
+        <li><a href = "https://edutorij-admin-api.carnet.hr/storage/extracted/2251664/lece.html">Usko vezano uz zrcala - leće</a></li>
+        <li><a href = "https://hr.wikipedia.org/wiki/Mikroskop">Uporaba zrcala i leća</a></li>
+
+    </div>
+      <h2>korištena literatura</h2>
+      <div class="literature">
+        <li><p>V. Paar, A. Hrlec, M. Sambolek, K. Vadlja-Rešetar: Fizika oko nas 3, Profil.</p></li>
+
+    </div>
+  </main>
+
+</body>
+</html>

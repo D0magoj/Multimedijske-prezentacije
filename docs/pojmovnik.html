@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pojmovnik - Sferna zrcala</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf5e6;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== VODORAVNI IZBORNIK ===== */
+    .horizontal-nav {
+      background-color: #f4c542;
+      width: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .horizontal-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .horizontal-nav ul li a {
+      display: block;
+      padding: 16px 24px;
+      text-decoration: none;
+      color: #4a3b0a;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .horizontal-nav ul li a:hover,
+    .horizontal-nav ul li a.active {
+      background-color: #e0b32e;
+      color: #fff;
+    }
+
+    /* ===== VERTIKALNI IZBORNIK ===== */
+    .vertical-nav {
+      position: fixed;
+      left: 0;
+      top: 54px;
+      width: 200px;
+      height: calc(100vh - 54px);
+      background-color: #f9e9b8;
+      border-right: 2px solid #e0c56e;
+      padding-top: 20px;
+      overflow-y: auto;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.08);
+      z-index: 90;
+    }
+    .vertical-nav ul { list-style: none; display: flex; flex-direction: column; }
+    .vertical-nav ul li a {
+      display: block;
+      padding: 12px 18px;
+      text-decoration: none;
+      color: #5a4a1a;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #ecd98a;
+      transition: background-color 0.2s ease, padding-left 0.2s ease;
+    }
+    .vertical-nav ul li a:hover,
+    .vertical-nav ul li a.active {
+      background-color: #f0d98c;
+      padding-left: 24px;
+      color: #3a2e08;
+      font-weight: 600;
+    }
+
+    /* ===== GLAVNI SADRŽAJ ===== */
+    .main-content {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .content-box {
+      width: clamp(320px, 40%, 900px);
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .content-box h1 {
+      font-size: 1.6rem;
+      color: #8a6d1a;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #f4c542;
+      padding-bottom: 8px;
+    }
+    .content-box p { margin-bottom: 14px; }
+
+    /* ===== LISTA POJMOVA ===== */
+    .glossary {
+      list-style: none;
+      margin: 20px 0 0 0;
+      padding: 0;
+    }
+    .glossary li {
+      padding: 8px 0;
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+    .glossary .term {
+      font-weight: 700;
+      color: #6b5310;
+    }
+
+    @media (max-width: 768px) {
+      .vertical-nav { display: none; }
+      .main-content { margin-left: 0; }
+      .content-box { width: 90%; }
+      .horizontal-nav ul li a { padding: 12px 14px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== VODORAVNI IZBORNIK ===== -->
+  <nav class="horizontal-nav">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="motivacija.html">Motivacija</a></li>
+      <li><a href="pokus.html">Pokus</a></li>
+      <li><a href="rasprava.html">Rasprava</a></li>
+      <li><a href="tekst.html">Tekst i linkovi</a></li>
+      <li><a href="kviz.html">Kviz znanja</a></li>
+      <li><a href="pojmovnik.html" class="active">Pojmovnik</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== VERTIKALNI IZBORNIK ===== -->
+  <aside class="vertical-nav">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="motivacija.html">1. Motivacija</a></li>
+      <li><a href="pokus.html">2. Pokus</a></li>
+      <li><a href="rasprava.html">3. Rasprava</a></li>
+      <li><a href="tekst.html">4. Tekst i linkovi</a></li>
+      <li><a href="kviz.html">5. Kviz znanja</a></li>
+      <li><a href="pojmovnik.html" class="active">6. Pojmovnik</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== GLAVNI SADRŽAJ ===== -->
+  <main class="main-content">
+    <div class="content-box">
+
+      <h1>Pojmovnik</h1>
+
+      <p>
+        Na ovoj se stranici nalaze ključni pojmovi iz lekcije o refleksiji
+        svjetlosti i sfernim zrcalima. Pojmovi su kratko objašnjeni kako bi
+        ti pomogli u ponavljanju i boljem razumijevanju gradiva.
+      </p>
+
+      <ul class="glossary">
+        <li>
+          <span class="term">Refleksija svjetlosti</span> — odbijanje svjetlosti od neku površinu (npr. od zrcala, vode ili metala).
+        </li>
+        <li>
+          <span class="term">Zakon refleksije</span> — upadna zraka i odbijena zraka leže u istoj ravnini, a kut upada jednak je kutu refleksije.
+        </li>
+        <li>
+          <span class="term">Kut refleksije</span> — kut između odbijene zrake i normale(zamišljene okomice na točku u koju upada svjetlost na zrcalu).
+        </li>
+        <li>
+          <span class="term">Tjeme zrcala</span> — sredina sfernog zrcala kroz koju prolazi optička os.
+        </li>
+        <li>
+          <span class="term">Optička os</span> — pravac koji prolazi kroz središte zakrivljenosti, žarište i tjeme zrcala.
+        </li>
+        <li>
+          <span class="term">Polumjer zakrivljenosti (r)</span> — polumjer kugle čiji je dio reflektirajuća površina zrcala.
+        </li>
+        <li>
+          <span class="term">Žarište (fokus, F)</span> — točka na optičkoj osi u kojoj se sijeku zrake svjetlosti paralelne s optičkom osi nakon refleksije od konkavnog zrcala.
+        </li>
+        <li>
+          <span class="term">Žarišna daljina (f)</span> — udaljenost od tjemena zrcala do žarišta. Računa se kao f = r / 2.
+        </li>
+        <li>
+          <span class="term">Realna slika</span> — slika koja nastaje stvarnim sjecištem odbijenih zraka. Može se projicirati na zastor, a obično je obrnuta.
+        </li>
+        <li>
+          <span class="term">Virtualna slika</span> — slika koja nastaje u produžetku odbijenih zraka. Ne može se projicirati na zastor, a obično je uspravna.
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+</body>
+</html>
